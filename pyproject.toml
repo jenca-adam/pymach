@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["pymach"]
+
+ext-modules = [{name = "pymach._pymach",sources = ["pymach/_pymach.c"], extra-compile-args = ["-Wall","-pedantic","-O3","-g3"]}]
+
+[project]
+name = "pymach"
+version = "0.0.1"
+description = "Execute machine code from Python"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["machine_code", "linux"]
+authors = [{name="Adam Jenca", email="jenca.adam@gmail.com"}]
+maintainers = [{name="Adam Jenca", email="jenca.adam@gmail.com"}]
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Programming Language :: C",
+	"Programming Language :: Python :: 3 :: Only",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+	"Intended Audience :: Developers"
+	]
+[project.urls]
+"Homepage" = "https://github.com/jenca-adam/pymach"
+"Bug Reports" = "https://github.com/jenca-adam/pymach/issues"
+
