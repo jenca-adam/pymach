@@ -15,7 +15,7 @@ pip install .
 Patching allows you to modify the machine code after it has been saved into memory.
 Use the `Code.patch()` method to do it.
 Example:
-```
+```python
 code = (
     b"\x48\xC7\xC0\x01\x00\x00\x00"  # mov rax, 1         (sys_write)
     b"\x48\xC7\xC7\x01\x00\x00\x00"  # mov rdi, 1         (stdout)

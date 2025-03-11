@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pymach/__init__.py
+pymach/_pymach.c
+pymach/pymach.py
+pymach.egg-info/PKG-INFO
+pymach.egg-info/SOURCES.txt
+pymach.egg-info/dependency_links.txt
+pymach.egg-info/top_level.txt
